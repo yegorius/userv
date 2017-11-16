@@ -1,0 +1,19 @@
+group 'io.μserv'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    //compile 'org.jboss.resteasy:resteasy-servlet-initializer:3.+'
+    compile 'org.jboss.resteasy:resteasy-jackson2-provider:3.+'
+    compile 'org.jboss.resteasy:resteasy-undertow:3.+'
+    compile 'org.jboss.resteasy:resteasy-guice:3.+'
+    compile 'org.reflections:reflections:0.+'
+    compile 'org.slf4j:slf4j-api:1.7.+'
+    compile 'com.typesafe:config:1.+'
+}
